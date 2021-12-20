@@ -1,0 +1,430 @@
+/*::selection pour changer la selection en cours*/
+/*filter pour le noir et blanc*/
+html{
+    scroll-behavior: smooth;
+}
+body, main {
+    font-family: Montserrat,sans-serif;
+}
+h1,h2,h3,h4 {
+    font-weight: normal;
+}
+::selection {
+    color: #fff;
+    background-color: #E4A28D;
+}
+/*-utlis--*/
+
+
+/*----swiper---*/
+.swiper {
+    width: 800px;
+    height: 300px;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+.swiper-pagination-bullet {
+    background-color: #fff;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #fff;
+}
+/*----fin swiper--*/
+
+.flex {
+    display: flex;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.gris {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FDFDFD;
+}
+.black{
+    padding-top: 180px;
+    background-color: #000;
+}
+.wrapper { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*--btn--*/
+.btn {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+}
+.btnRose {
+    background-color: #E4A28D;
+    color: #fff;
+}
+/*---goutière--*/
+.gutterTop{
+    margin-top: 10px;
+}
+.gutterRight{
+    margin-right: 10px;
+}
+/*---------------*/
+/*----header----*/
+/*-------------*/
+.header{
+    align-items: center;
+}
+.header .banner {
+    width: 280px;
+    margin: 50px;
+}
+/*--nav--*/
+.mainNav{
+    width: 800px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.mainNav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #777 ;
+    transition: all ease-in-out 0.2s;
+    font-size: small;
+}
+.mainNav a:hover{
+    color:#e4a28d;
+}
+.mainNav .ico16{
+    width: 16px;
+    opacity: 0.5;
+    transition: all ease-in-out 0.2s;
+}
+.mainNav .ico16:hover{
+    width: 16px;
+    opacity: 1;
+}
+/*----------*/
+/*---main---*/
+/*----------*/
+/*-- section 1 --*/
+/*--article1--*/
+.highQuality{
+    justify-content: center;
+    align-items: flex-end;
+    background:
+    url(../images/balloons.png) no-repeat bottom left 50px/430px,
+    url(../images/confettis.svg) no-repeat fixed top -250px left/60%, 
+    #FED1DE ;
+    height: 530px;
+}
+.highQualityText {
+    margin-right:  100px;
+    width: 500px;
+}
+.highQualityText h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 43px;
+    line-height: 55px;
+    background-color: #FED1DE;
+}
+.highQualityText p{
+    margin-bottom: 80px;
+    font-size: 23px;
+    line-height: 36px;
+    background-color: #FED1DE;
+}
+/*--article2 - 3 cases--*/
+.troisCase{
+    justify-content: space-between;
+    height: 500px;
+}
+.case1 {
+    background: url(../images/parties.jpg) center/cover;
+}
+.case2 {
+    background: url(../images/wedding.jpg) center/cover;
+}
+.case3 {
+    background: url(../images/services.jpg) center/cover;
+}
+/*--cases, texte, hover---*/
+.case, .uneCase {
+    position: relative;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all ease-in-out 0.5s;
+    overflow: hidden;
+}
+.case:hover, .uneCase:hover {
+    filter: grayscale(0%);
+    transition: all ease-in-out 0.5s;
+}
+.case:hover {
+    width: 140%;
+}
+.caseText{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    bottom: -250px;
+    font-size: 12px;
+    line-height: 25px;
+}
+.caseText h2, .caseText p, .caseText a{
+    margin: 20px;
+}
+.case:hover .caseText, .uneCase:hover .caseText {
+    bottom: 0px;
+    transition: all ease-in-out 0.1s 0.5s;
+}
+/*-article 3 - 1 case-*/
+.uneCase {
+    height: 400px;
+    background: url(../images/nue-kids.jpg);
+}
+
+/*--section 2 --*/
+/*--image katie -*/
+.loveKatie div, .special div{
+    margin: 80px 0;
+    width: 50%;
+}
+.katie, .makeitSpecial{
+    position: relative;
+    /* background:url(../images/about.jpg)no-repeat center/cover;
+    height: 500px; */
+}
+.katie::before{
+    position: absolute;
+    content: "";
+    width:180px;
+    height: 180px;
+    background: url("../images/katie-cut-out.png") no-repeat center/cover, #fff;
+    border-radius: 50%;
+    top: -30px;
+    right: 20px;
+}
+.katie::after{
+    position: absolute;
+    content: "katie hibbs";
+    background-color: #fff;
+    padding: 10px;
+    top: 120px;
+    right: 20px;
+    text-transform: capitalize;
+}
+/*--text-katie-*/
+.katieText, .specialText {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding:0 80px;
+    line-height: 25px;
+}
+.katieText p, .specialText p{
+    font-size: 14px;
+}
+.katieText p:nth-of-type(3){
+    font-size: 16px;
+    padding-left: 40px;
+    border-left: 1px solid #E4A28D;
+}
+.katieText a, .specialText a{
+    font-size: 12px;
+    margin-top: 40px;
+}
+/*----service---*/
+.makeitSpecial {
+    order: 1;
+}
+.specialText ul{
+    margin-bottom: 50px;
+}
+/*--collection--*/
+.collection {
+    text-align: center;
+}
+.collection>.flex{
+    margin-top: 80px;
+    justify-content: center;
+}
+.collection .flex div{
+    align-items: center;
+    width: 20%;
+}
+.collection .flex div p:nth-of-type(1){
+    font-weight: 700;
+}
+.balloons {
+    width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.balloon {
+    width:160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.area{
+    margin-top: 80px;
+    text-align: center;
+}
+.area>div{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    line-height: 30px;
+}
+.area ul{
+    list-style-type: none;
+    justify-content: center;
+    font-size: 30px;
+}
+.area ul li:nth-of-type(n+2)::before{
+    content: "•"; 
+    position: relative;
+    font-size: 80px;
+    line-height: 0;
+    top: 15px;
+}
+
+
+/*--section 3--*/
+/*---gallery--*/
+
+.gallery {
+    padding: 50px;
+    text-align: center;
+    background:url(../images/confettis.svg) repeat-x center/700px   , #FED1DE;
+    transition: all ease-in-out 0.1s;
+}
+.gallery:hover {
+    cursor: pointer;
+    transform:translateY(-10px);
+    box-shadow: -5px 5px 10px #aaa, 5px 5px 10px #aaa;
+    transition: all ease-in-out 0.1s;
+}
+.gallery h2 {
+    font-size: 40px;
+    background-color: #FED1DE;
+}
+.gallery p{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FED1DE;
+}
+/*--commentaire--*/
+.comm{
+    margin: 0 auto;
+    color: #fff;
+}
+/*--contact--*/
+.contact{
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.contact img{
+    width: 22px;
+    padding-right: 5px;
+}
+.contact a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.contact p {
+    font-size: 25px;
+    line-height: 15px;
+}
+/*--footer--*/
+.footer{
+    background: url(../images/bg.jpg) center/cover;
+}
+.footerBanner{
+    padding-top: 250px;
+    padding-bottom: 200px;
+    width: 400px;
+    margin: 0 auto;
+}
+.footerNav {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.footerNav img{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 40px;
+}
+.footerNav a{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+.footerNav a:hover{
+    opacity: 0.7;
+    transition: all ease-in-out 0.3s;
+}
+/*---copy terms--*/
+.terms p{
+    color: #fff;
+    font-size: 10px;
+    margin-right: 100px;
+    line-height: 0;
+    align-self: flex-end;
+}
+.bapia{
+    margin: 10px;
+}
+.bapia img{
+    display: block;
+    width: 250px;
+}
+ @media screen and (max-width:900px) {
+    .highQuality{
+        justify-content: flex-start;
+        height: 100vh;
+        margin: 0 20px; 
+        background-position: bottom right, top ;
+        background-size: 400px, 1000px;
+    }
+    .highQualityText h1 {
+        margin-top: 200px;
+    }
+    .troisCase{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+    .case, .uneCase {
+        position: relative;
+        width: 100%;
+        filter: grayscale(0%);
+    }
+    .caseText{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .case:hover {
+        width: 100%;
+    }
+}
